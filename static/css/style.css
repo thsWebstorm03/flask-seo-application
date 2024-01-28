@@ -1,0 +1,116 @@
+@import "custom-button.css";
+@import "custom-select.css";
+@import "custom-scrollbar.css";
+
+body {
+   margin: 0 !important;
+}
+
+* {
+   transition: all 0.3s;
+   color: white;
+}
+
+a{
+   color: white;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+a:hover{
+   color:white;
+   text-decoration: none;
+}
+
+button {
+   background-color: transparent;
+   background-image: none;
+}
+
+.w-full{
+   width: 100%;
+}
+
+.side-wrapper {
+   width: 250px;
+   min-width: 50px;
+   max-width: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: self-start;
+   flex-grow: 0;
+   --tw-border-opacity: 1;
+   border-color: rgb(64 64 64 / var(--tw-border-opacity));
+   --tw-bg-opacity: 1;
+   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+   border-width: 0;
+   border-right-width: 1px;
+   border-style: solid;
+   box-shadow: rgba(91, 91, 91, 0.2117647059) 2px 0px 3px;
+}
+
+.side-collapsed{
+   width: 50px;
+}
+
+.logo{
+   text-align: center;
+}
+
+.header-wrapper {
+   position: relative;
+   z-index: 40;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-top-width: 1px;
+   border-bottom-width: 1px;
+   --tw-border-opacity: 1;
+   border-color: rgb(64, 64, 64);
+   --tw-bg-opacity: 1;
+   background-color: rgb(32, 32, 32);
+   padding-left: 0.75rem;
+   padding-right: 0.75rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   height: 50px;
+   box-shadow: #5b5b5b36 0px 2px 3px;
+}
+
+.content-wrapper {
+   --tw-bg-opacity: 1;
+   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+   padding: 0.75rem;
+   min-height: calc(100vh - 50px);
+   max-height: calc(100vh - 50px);
+   overflow-y: scroll;
+}
+
+.menu-container{
+   padding: 0.5rem 0;
+   overflow: hidden;
+}
+
+.menu{
+   margin: 0 !important;
+   padding: 0 !important;
+}
+
+.menu-item{
+   cursor: pointer;
+   width: 100%;
+   padding: 0.8rem;
+   padding-left: 1.5rem;
+   list-style: none;
+   border-bottom: 1px solid rgba(38,38,38, 0.8);
+}
+
+.menu-item:hover{
+   background-color: rgba(143, 138, 138, 0.808);
+   transform: scale(1.1, 1.1);
+}
+
+.menu-item:active{
+   transform: scale(1, 1);
+}

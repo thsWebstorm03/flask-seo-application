@@ -1,0 +1,28 @@
+
+.primary-btn {
+   width: max-content;
+   border-style: solid;
+   border-radius: 0.25rem;
+   border-width: 1px;
+   --tw-border-opacity: 1;
+   border-color: rgb(64 64 64 / var(--tw-border-opacity));
+   padding: 6px 0.5rem;
+   --tw-text-opacity: 1;
+   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.primary-btn:hover {
+   --tw-bg-opacity: 1;
+   background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+   transform: scale(1.1, 1.1);
+}
+
+.primary-btn:active {
+   --tw-bg-opacity: 1;
+   background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+   transform: scale(1, 1);
+}
+
+.primary-btn:focus {
+   outline: none;
+}

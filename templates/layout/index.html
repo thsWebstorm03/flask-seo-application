@@ -1,0 +1,18 @@
+{% block layout %}
+   <div class="col-12" style="min-height: 100vh; display:flex; flex-direction: row; padding: 0;">
+      <div class="side-wrapper" id="sidemenu">
+         {% block sidemenu %}
+            {% include 'layout/sidemenu.html' %}
+         {%endblock%}
+      </div>
+      <div style="flex-grow: 1; background-color: blue;">
+         <div class="header-wrapper">
+            {% block header %}
+            {%endblock%}
+         </div>
+         <div class="content-wrapper">
+            {% block content %}{%endblock%}
+         </div>
+      </div>
+   </div>
+{% endblock %}

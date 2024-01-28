@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="description" content="Flask SEO Application" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+      <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" sizes="64x64"/>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+   </head>
+   <body>
+      {% if user_is_logged_in %} 
+         {% include 'discover_page.html' %} 
+      {% else %} 
+         {%include 'login.html' %} 
+      {% endif %}
+      <script src="https://code.jquery.com/jquery-3.7.0.js" type="text/Javascript"></script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+            initEvents();
+         })
+      
+         function initEvents(){
+            $("#menu_toggle").on('click', toggleSideMenu);
+         }
+
+         function toggleSideMenu(e){
+            $("#sidemenu").toggleClass('side-collapsed')
+         }
+      </script>
+   </body>
+</html>

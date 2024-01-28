@@ -1,0 +1,33 @@
+{% extends 'layout/index.html' %}
+
+{% block header %}
+   {% set title = 'Spam Contenu/Discover' %}
+   {% include 'layout/header.html' %}
+{%endblock%}
+
+<!-- define discover_page content -->
+{% block content %}
+   <div class="container">
+      <div class="row col-md-12">
+         <div class="col-md-6">
+            <span>API KEY</span>
+            <select class="select">
+               <option value="Tanguy" selected>Tanguy clé OpenAI</option>
+               <option value="Olivier">Olivier clé OpenAI</option>
+            </select>
+         </div>
+         <div class="col-md-6" style="text-align: right;">
+            <button class="primary-btn mr-2" id="menu_toggle">
+               Ajouter un site
+            </button>
+            <button class="primary-btn mr-2" id="menu_toggle">
+               Update Prompt
+            </button>
+            <button class="primary-btn mr-2" id="menu_toggle">
+               Reset Prompt to Default
+            </button>
+         </div>
+      </div>
+   </div>
+{%endblock%}
+
